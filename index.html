@@ -10,14 +10,752 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <title>PokeMatch</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mainMenu.css">
+    <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
 <body>
+    <div>
+
+
+        <!DOCTYPE html
+            PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://ogp.me/ns#"
+            xmlns:fb="https://www.facebook.com/2008/fbml">
+
+        <head>
+            <script type="text/javascript">
+                var NREUMQ = NREUMQ || [];
+                NREUMQ.push(["mark", "firstbyte", new Date().getTime()]);
+            </script>
+            <meta http-equiv="Content-Type" content="text/html" />
+            <meta http-equiv="Content-Language" content="en" />
+            <meta name="language" content="en" />
+            <meta name="keywords"
+                content="Pokémon, Pokédex, Pokémon Games, Pokémon online, Pokémon Heart Gold Soul Silver, Pokémon Cards, Pikachu, Pokémon movies, Pokémon Diamond and Pearl, Pokémon TCG, Trading Card Game, TV, Cartoon" />
+            <meta name="description"
+                content="Explore Pokemon.com for news and information on Pokémon, the Pokédex, Pokémon games, the Trading Card Game, Pokémon movies, and Pokémon TV show." />
+
+
+            <link rel="image_src" href="http://assets24.pokemon.com/static/_ui/img/logos/pokemon_facebook.png" />
+            <meta property="og:image" content="http://assets24.pokemon.com/static/_ui/img/logos/pokemon_facebook.png" />
+
+            <!-- google search appliance meta tags -->
+
+            <title>The Official Pok&eacute;mon Website | Pokemon.com</title>
+
+            <link rel="shortcut icon" href="http://assets4.pokemon.com/static/_ui/img/favicon.ico" />
+
+            <link href="http://assets23.pokemon.com/static/us/css/compiled.css" rel="stylesheet" type="text/css"
+                media="all" />
+
+
+            <script src="http://assets7.pokemon.com/static/us/js/compiled.js" type="text/javascript" charset="utf-8">
+            </script>
+
+
+            <script type="text/javascript" charset="utf-8">
+                // Tweaks for tidying up presentation
+                $(document).ready(function () {
+                    $(".roundedBucket div.thumbList:last-child").css('margin-bottom', '0');
+                });
+            </script>
+        </head>
+        <body class="twoColumn nojs homepage">
+            <div class="wrapper-subzero">
+                <div class="wrapper-0">
+                    <div class="wrapper-1">
+                        <div class="wrapper-2" id="chrome-wrapper-2">
+                            <div id="safeArea">
+
+                                <div id="globalDashboard">
+                                    <!-- Has class 'op' for op members -->
+                                    <div class="loggedIn">
+                                        <div class="wrapper">
+                                            <div class="avatar"></div>
+
+                                            <div class="meta">
+                                                <p class="username"></p>
+
+                                                <ul class="utility">
+                                                    <li><a href="/us/account/my-profile/">View Profile</a></li>
+                                                    <li><a href="/us/account/logout">Log Out</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="coins bigSmall"><span class="score"></span><span
+                                                    class="smaller">Tokens</span></p>
+                                            <p class="opScore bigSmall"><a href="/us/account/my-op/"><span
+                                                        class="score">0</span></a></p>
+                                            <a class="opLink" href="/us/play-pokemon/">Play! Pokémon</a>
+                                            <a class="opOptLink" href="/us/account/edit-profile/#oppref">Opt in to
+                                                Rankings!</a>
+
+                                            <div id="quoteBubble"><span class="komica">&ldquo;<span
+                                                        class="quote">X</span>&rdquo;</span></div>
+                                            <div id="flipBubble"><span class="offscreen">Flip over to view
+                                                    Pok&eacute;mon</span></div>
+                                            <div id="tcgScoreBubble"><span class="offscreen">TCG Premier Rating</span>
+                                            </div>
+
+                                            <a id="btn-inbox" class="iconButton disabled"
+                                                href="/us/account/inbox/my-messages/"><span
+                                                    class="offscreen">Inbox</span></a>
+                                            <a id="btn-flip" class="iconButton disabled"><span
+                                                    class="offscreen">Flip</span></a>
+                                            <a id="btn-gear" class="iconButton"><span class="offscreen">Gear</span></a>
+                                        </div>
+
+                                        <div class="drawer">
+                                            <h3 class="komica">Your Favorite Pok&eacute;mon</h3>
+
+                                            <ol class="favorites">
+                                                <!-- Switching from server side population to client side for Django caching (GS) -->
+                                                <!-- Using alt tags to indicate Pokemon ID -->
+                                                <li class="fave-1">
+                                                    <div class="number"><span class="offscreen">1</span></div>
+                                                </li>
+                                                <li class="fave-2">
+                                                    <div class="number"><span class="offscreen">2</span></div>
+                                                </li>
+                                                <li class="fave-3">
+                                                    <div class="number"><span class="offscreen">3</span></div>
+                                                </li>
+                                                <li class="fave-4">
+                                                    <div class="number"><span class="offscreen">4</span></div>
+                                                </li>
+                                                <li class="fave-5">
+                                                    <div class="number"><span class="offscreen">5</span></div>
+                                                </li>
+                                                <li class="fave-6">
+                                                    <div class="number"><span class="offscreen">6</span></div>
+                                                </li>
+                                            </ol>
+                                            <div class="numbers"></div>
+
+                                            <div class="clear"></div>
+
+
+                                            <p class="komica">Drag a Pok&eacute;mon to rearrange its position. When
+                                                you&rsquo;re done, click &ldquo;save&rdquo; or go to the <a
+                                                    href="/us/pokemon-fun-zone/">Fun Zone</a> to edit your 6 favorites!
+                                            </p>
+
+                                            <a class="btn btn-lb" href="#">
+                                                <span class="left"></span>
+                                                <span class="mid">Save!</span>
+                                                <span class="right"></span>
+                                            </a>
+
+                                            <div class="saveIndicator"><span>Saving</span><img
+                                                    src="http://assets14.pokemon.com/static/_ui/img/widgets/dashboard/load-indicator2.gif"
+                                                    width="56" height="21" alt='Load Indicator2' /></div>
+
+                                            <div class="clear"></div>
+
+                                            <a class="btn-close"><span class="offscreen">Close Drawer</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="loggedOut">
+                                        <h3><a href="/us/account/signup/"><span class="offscreen">Join The
+                                                    Pok&eacute;mon Trainer Club Now! <strong>Join
+                                                        Now!</strong></span></a></h3>
+
+                                        <div class="avatar"></div>
+
+                                        <div class="buttons">
+                                            <a class="btn btn-mini" href="/us/account/login">
+                                                <span class="left"></span>
+                                                <span class="mid">Log In</span>
+                                                <span class="right"></span>
+                                            </a>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="header">
+                                    <h3 id="logo-pokemon"><a href="http://www.pokemon.com/us/"><span
+                                                class="offscreen">Pok&eacute;mon</span></a></h3>
+
+                                    <div class="clickShield"></div>
+
+
+                                    <ul id="mainNav">
+                                        <!-- a classes: "on" for active section -->
+                                        <li class="primary videoGames">
+                                            <a href="http://www.pokemon.com/us/pokemon-video-games/"
+                                                class="primary"><span class="offscreen">Video Games</span></a>
+                                            <div class="dropdown">
+                                                <div class="pointer"></div>
+
+                                                <div class="wrapper-3">
+                                                    <div class="wrapper-2">
+                                                        <div class="wrapper-1">
+
+                                                            <div class="column-1">
+                                                                <h4><a
+                                                                        href="http://www.pokemon.com/us/pokemon-video-games/"><span
+                                                                            class="offscreen">Pok&eacute;mon Video
+                                                                            Games</span></a></h4>
+
+                                                                <ul class="secondary">
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-video-games/">Video
+                                                                            Games Home</a></li>
+                                                                    <li><a href="http://www.pokemon.com/us/pokedex/">Online
+                                                                            Pokédex</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-video-games/all-pokemon-games/">See
+                                                                            All Games</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-video-games/pokemon-strategy/">Video
+                                                                            Game Strategies</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-news/pokemon-video-games-news/">Video
+                                                                            Game News</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/play-pokemon/">Play!
+                                                                            Pokémon</a></li>
+
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="column-2">
+                                                                <p class="din small">FEATURED IN VIDEO GAMES:</p>
+
+
+                                                                <div class="featurebox-small">
+                                                                    <div class="red">
+                                                                        <img src="http://assets10.pokemon.com/assets/cms/img/video-games/navfeature/pmd_gti_navfeature.jpg"
+                                                                            alt="" />
+                                                                        <a
+                                                                            href="http://www.pokemonmysterydungeon.com/gates-to-infinity/en-us"><span
+                                                                                class="indicator arrow">
+                                                                                Pokémon Mystery Dungeon: Gates to
+                                                                                Infinity
+                                                                            </span></a>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+                                                            </div>
+
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottomCap"></div>
+                                            </div>
+                                        </li>
+                                        <li class="primary tradingCardGame">
+                                            <a href="http://www.pokemon.com/us/pokemon-trading-card-game/"
+                                                class="primary"><span class="offscreen">Trading Card Game</span></a>
+                                            <div class="dropdown">
+                                                <div class="pointer"></div>
+
+                                                <div class="wrapper-3">
+                                                    <div class="wrapper-2">
+                                                        <div class="wrapper-1">
+                                                            <div class="column-1">
+                                                                <h4><a
+                                                                        href="http://www.pokemon.com/us/pokemon-trading-card-game/"><span
+                                                                            class="offscreen">Pok&eacute;mon Trading
+                                                                            Card Game</span></a></h4>
+
+                                                                <ul class="secondary">
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-trading-card-game/">TCG
+                                                                            Home</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-trading-card-game/pokemon-trading-card-expansions/">TCG
+                                                                            Expansions</a></li>
+
+                                                                    <li><a href="http://www.pokemontcg.com/">Pokémon TCG
+                                                                            Online</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-trading-card-game/database/">Trading
+                                                                            Card Database</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-trading-card-game/pokemon-trading-card-strategy/">TCG
+                                                                            Strategies</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-news/pokemon-tcg-news/">TCG
+                                                                            News</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/play-pokemon/">Play!
+                                                                            Pokémon</a></li>
+
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="column-2">
+                                                                <p class="din small">FEATURED IN TCG:</p>
+                                                                <div class="featurebox-small">
+                                                                    <div class="orange">
+                                                                        <img src="http://assets2.pokemon.com/assets/cms/img/tcg/bw10_navfeature.jpg"
+                                                                            alt="" />
+                                                                        <a
+                                                                            href="http://www.pokemon.com/us/ex/bw10-plasma-blast"><span
+                                                                                class="indicator arrow">
+                                                                                Pokémon TCG: Black &amp; White—Plasma
+                                                                                Blast expansion
+                                                                            </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="din small">SEARCH THE TRADING CARD DATABASE:
+                                                                </p>
+                                                                <form
+                                                                    action="/us/pokemon-trading-card-game/database/basic/">
+                                                                    <div class="megadropSearch">
+                                                                        <input type="hidden" name="searchCardName"
+                                                                            id="searchCardName" value=""></input>
+                                                                        <input class="text" name="cardSearchTerm"
+                                                                            id="cardSearchTermMD" type="text"></input>
+                                                                        <input class="submit" type="submit" name=""
+                                                                            value=""></input>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+
+                                                            <div class="clear"></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottomCap"></div>
+                                            </div>
+                                        </li>
+                                        <li class="primary animation">
+                                            <a href="http://www.pokemon.com/us/tv-episodes/pokemon-episodes/"
+                                                class="primary"><span class="offscreen">Animation</span></a>
+                                            <div class="dropdown">
+                                                <div class="pointer"></div>
+
+                                                <div class="wrapper-3">
+                                                    <div class="wrapper-2">
+                                                        <div class="wrapper-1">
+
+                                                            <div class="category">
+                                                                <h4 class="tv"><a
+                                                                        href="http://www.pokemon.com/us/tv-episodes/"><span
+                                                                            class="offscreen">Pok&eacute;mon
+                                                                            TV</span></a></h4>
+
+                                                                <ul class="wide secondary">
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/tv-episodes/pokemon-episodes/">Watch
+                                                                            Pokémon TV Now!</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/tv-episodes/new-pokemon-episodes/">Upcoming
+                                                                            Online Episodes</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/tv-episodes/pokemon-episode-guide/">Episode
+                                                                            Encyclopedia</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-news/pokemon-movie-news/">Pokémon
+                                                                            TV News</a></li>
+
+                                                                </ul>
+
+                                                                <div class="featurebox-small">
+                                                                    <div class="lightBlue">
+                                                                        <img src="http://assets7.pokemon.com/assets/cms/img/animation/nav_feature/tv_generic_navfeature.jpg"
+                                                                            alt="" />
+                                                                        <a
+                                                                            href="http://www.pokemon.com/us/tv-episodes/pokemon-episodes/"><span
+                                                                                class="indicator arrow">
+                                                                                Watch Ash&#39;s adventures in Unova on
+                                                                                Pokémon TV!
+                                                                            </span></a>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+                                                                <div class="clear"></div>
+                                                            </div>
+
+                                                            <div class="category end">
+                                                                <h4 class="movies"><a href="/us/pokemon-movies/"><span
+                                                                            class="offscreen">Pok&eacute;mon
+                                                                            Movies</span></a></h4>
+                                                                <ul class="wide secondary">
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-movies/">Movie
+                                                                            Encyclopedia</a></li>
+                                                                </ul>
+                                                                <div class="featurebox-small">
+                                                                    <div class="lightBlue">
+                                                                        <img src="http://assets16.pokemon.com/assets/cms/img/animation/nav_feature/movie15_navfeature.jpg"
+                                                                            alt="" />
+                                                                        <a
+                                                                            href="http://www.pokemon.com/us/pokemon-movies/movie-pokemon-the-movie-kyurem-vs-the-sword-of-justice-december-8th-2012/"><span
+                                                                                class="indicator arrow">
+                                                                                Pokémon the Movie: Kyurem vs. The Sword
+                                                                                of Justice
+                                                                            </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottomCap"></div>
+                                            </div>
+                                        </li>
+                                        <li class="primary funZone">
+                                            <a href="http://www.pokemon.com/us/pokemon-fun-zone/" class="primary"><span
+                                                    class="offscreen">Fun Zone</span></a>
+                                            <div class="dropdown">
+                                                <div class="pointer"></div>
+
+                                                <div class="wrapper-3">
+                                                    <div class="wrapper-2">
+                                                        <div class="wrapper-1">
+                                                            <div class="column-1">
+                                                            </div>
+                                                            <div class="column-2">
+                                                                <ul class="secondary">
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/">Pokémon
+                                                                            Fun Zone!</a></li>
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/pokemon-online-games/">Online
+                                                                            Games!</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/pokemon-trainer-builder/">Trainer
+                                                                            Builder</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/pokemon-trainer-builder/shop/">Pokémon
+                                                                            Trainer Store</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/downloads/">Cool
+                                                                            Downloads</a></li>
+
+                                                                    <li><a
+                                                                            href="http://www.pokemon.com/us/pokemon-fun-zone/wheel-spin/">Pokémon
+                                                                            Trainer Club Spin</a></li>
+
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottomCap"></div>
+                                            </div>
+                                        </li>
+                                        <li class="primary newsAndEvents">
+                                            <a href="http://www.pokemon.com/us/pokemon-news/" class="primary"><span
+                                                    class="offscreen">News &amp; Events</span></a>
+                                            <div class="dropdown"></div>
+                                        </li>
+                                    </ul>
+
+                                    <ul id="mainNav-indicators">
+                                        <li class="videoGames"></li>
+                                        <li class="tradingCardGame"></li>
+                                        <li class="animation"></li>
+                                        <li class="funZone"></li>
+                                        <li class="newsAndEvents"></li>
+                                    </ul>
+
+                                    <div id="secondaryNav">
+                                        <div class="mask"></div>
+                                        <ul>
+                                            <!--	<li class="pokedex">
+							<a href="/us/pokedex/"><span class="offscreen">Pok&eacute;dex</span>
+								<span class="bg"></span>
+								<span class="icon"></span>
+							</a>
+						</li> -->
+                                            <li class="globalLink">
+                                                <a href="http://en.pokemon-gl.com/" class="no_blank_target"><span
+                                                        class="offscreen">Pok&eacute;mon Global Link</span>
+                                                    <span class="bg"></span>
+                                                    <span class="icon"></span>
+                                                </a>
+                                            </li>
+                                            <li class="tcgOnline">
+                                                <!--  For EFIGS
+<a href="http://www.pokemontcg.com/us/" class="no_blank_target"><span class="offscreen">Pok&eacute;mon Trading Card Game Online</span>
+-->
+
+
+                                                <a href="http://www.pokemontcg.com" class="no_blank_target"><span
+                                                        class="offscreen">Pok&eacute;mon Trading Card Game Online</span>
+
+                                                    <span class="bg"></span>
+                                                    <span class="icon"></span>
+                                                </a>
+                                            </li>
+                                            <li class="tvWatch">
+                                                <a href="http://www.pokemon.com/us/tv-episodes/pokemon-episodes/"><span
+                                                        class="offscreen">Watch Pok#233;mon Online Now!</span>
+                                                    <span class="bg"></span>
+                                                    <span class="icon"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div id="siteSearch">
+                                        <form method="get" action="/us/search/">
+                                            <label for="searchBox" class="offscreen">Search:</label>
+                                            <input type="text" name="search" value="Search..." id="searchBox"></input>
+                                            <input type="submit" name="submit" value="" id="searchBoxSubmit"></input>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div id="content">
+                                    <div id="mainContent">
+                                        <div id="homeSubcontent">
+                                                <div class="top">
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="bot"></div>
+                                            <div id="featuredPokemon-wrapper" class="mx-auto mt-5">
+                                                <div class="flexBox" id="featuredPokemon">
+                                                    <div class="red">
+                                                        <div class="upper">
+                                                            <div class="outer">
+                                                                <div class="clear"></div>
+                                                                <div class="inner">
+                                                                    <div class="content">
+                                                                        <div class="metadata">
+                                                                                <p class="number">#645</p>
+                                                                                <p class="name">Landorus</p>
+                                                                            </a>
+                                                                            <dl>
+                                                                                <dt>TYPE</dt>
+                                                                                <dd>Flying-Ground</dd>
+                                                                                <dt>ABILITY</dt>
+                                                                                <dd>Intimidate</dd>
+                                                                                <dt>HEIGHT</dt>
+                                                                                <dd>4' 3"</dd>
+                                                                                <dt>WEIGHT</dt>
+                                                                                <dd>149.9 lbs</dd>
+                                                                            </dl>
+                                                                        </div>
+                                                                        <img class="character"
+                                                                            src="http://assets4.pokemon.com/static/_ui/img/sections/pokedex/full/645.png"
+                                                                            width="140" height="139"
+                                                                            alt='Home' />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="lower">
+                                                            <div class="outer">
+                                                                <div class="inner">
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 id="galleryOfUserProfiles"><span class="offscreen">Gallery of user
+                                                profiles</span></h3>
+                                        <div class="flexBox" id="userProfileGallery"></div>
+                                    </div>
+                                    <div id="secondaryContent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="superFooter">
+                <div>
+                    <div class="container">
+                        <div class="links">
+                        </div>
+                        <div class="footerText">
+                            <p style="width: 550px;">ASHIAP</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="footer">
+            </div>
+
+            <script type="text/javascript" charset="utf-8">
+                //<![CDATA[
+                $(document).ready(function () {
+                    pokemonUI.init();
+                });
+                //]]>
+            </script>
+
+            <script src="http://assets3.pokemon.com/static/_ui/js/page-specific/homepage.js" type="text/javascript"
+                charset="utf-8"></script>
+            <script type="text/javascript">
+                //<![CDATA[
+                // Register post-authentication callback for homepage polls (PCOM-2316)
+                pokemonUI.options.authCallbacks.push(function (data) {
+                    if (data.is_authenticated) {
+                        polls.userLoggedIn();
+                    } else {
+                        polls.userNotLoggedIn();
+                    }
+                });
+
+                $(document).ready(function () {
+
+                    var cookie = {
+                        set: function (name, value, days) {
+                            var expires,
+                                date = new Date();
+
+                            if (days) {
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                                expires = '; expires=' + date.toGMTString();
+                            } else {
+                                expires = '';
+                            }
+
+                            document.cookie = name + '=' + value + expires + '; path=/';
+                        },
+
+                        get: function (name) {
+                            var nameEQ = name + '=',
+                                ca = document.cookie.split(';'),
+                                c, i = 0,
+                                ii = 0;
+
+                            for (i = 0, ii = ca.length; i < ii; i++) {
+                                c = ca[i];
+
+                                while (c.charAt(0) === ' ') {
+                                    c = c.substring(1, c.length);
+                                }
+
+                                if (c.indexOf(nameEQ) === 0) {
+                                    return c.substring(nameEQ.length, c.length);
+                                }
+                            }
+                            return null;
+                        },
+
+                        destroy: function (name) {
+                            this.set(name, '', -1);
+                        }
+                    };
+                    // Embed flash pieces :
+
+                    var homeFeature = {
+                        config: {
+                            src: rootVirtual + "swf/features/PmFeatureHomeShell.swf",
+                            wmode: 'transparent',
+                            allowscriptaccess: 'always'
+                        },
+                        flashvars: {
+                            appFile: rootVirtual + 'swf/features/PmFeatureHomeApp.swf',
+                            configFile: '/us/_hpc.xml',
+                            dynamicTextPath: rootVirtual + 'swf/features/PmFeatureTVText.swf'
+                        }
+                    };
+
+                    var homeFlashCallout = {
+                        config: {
+                            src: 'http://assets6.pokemon.com/assets/cms/swf/homepage/top_right/home_topright_shiny_distro_us.swf',
+                            wmode: 'opaque'
+                        }
+                    };
+
+                    var marquee = {
+                        config: {
+                            src: rootVirtual + "swf/MarqueeApplication.swf",
+                            wmode: 'transparent',
+                            allowscriptaccess: 'always'
+                        },
+                        flashvars: {
+                            xmlPath: "/us/_mc.xml",
+                            countryCode: "us",
+                            langFilePath: "http://assets20.pokemon.com/static/us/marquee/language.xml"
+                        }
+                    };
+
+                    $('div#header').append('<div id="flashMarquee"></div><div id="flashMask"></div>');
+                    $('div#homeFlash-1').flashembed(homeFeature.config, homeFeature.flashvars);
+                    $('div#homeFlashCallout').flashembed(homeFlashCallout.config);
+                    $('div#flashMarquee').flashembed(marquee.config, marquee.flashvars);
+                    /* Get avatars asynchronously */
+                    $.ajax({
+                        url: '/us/avatar-gallery/',
+                        success: function (data) {
+                            if (/avatar-gallery-async/i.test(data)) {
+                                $('#userProfileGallery').html(data);
+                                AvatarSlider.init({
+                                    target: $('div#userProfileGallery')
+                                });
+                                pokemonUI._createFlexBox();
+                                pokemonUI._replaceFonts();
+                            } else {
+                                $('h3#galleryOfUserProfiles').hide();
+                            }
+                        }
+                    });
+                    polls.initialize();
+                });
+                //]]>
+            </script>
+
+            <script type="text/javascript">
+                if (!NREUMQ.f) {
+                    NREUMQ.f = function () {
+                        NREUMQ.push(["load", new Date().getTime()]);
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.src = (("http:" === document.location.protocol) ? "http:" : "https:") + "//" +
+                            "js-agent.newrelic.com/nr-100.js";
+                        document.body.appendChild(e);
+                        if (NREUMQ.a) NREUMQ.a();
+                    };
+                    NREUMQ.a = window.onload;
+                    window.onload = NREUMQ.f;
+                };
+                NREUMQ.push(["nrfj", "beacon-4.newrelic.com", "ba34eb72cb", "1087113,1087114",
+                    "MgFaZkVVWBBXABIPWAtLfkdZV0IKWQ1JC1YMChZTR0QYFV8GERUZBgtNXENGTxBTDwMFQ18IWVxTXVgE", 0, 329,
+                    new Date().getTime(), "", "", "", "", ""
+                ]);
+            </script>
+        </body>
+
+        </html>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -26,8 +764,9 @@
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
     </script>
     <!-- Optional JavaScript -->
-    <script src="./script.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mainMenu.js"></script>
 </body>
 
 </html>
