@@ -1,9 +1,10 @@
+#homeSubcontent {
+  margin: 0;
+}
+
 #homeSubcontent > .mid {
   position: relative;
-  /* background-color: aquamarine; */
-  /* top: 300px; */
-  left: -175px;
-  /* height: 300px; */
+  /* left: -175px; */
   display: flex;
 }
 
@@ -28,6 +29,7 @@
   transition: transform 0.3s ease-out;
   transform: rotateY(0deg);
 }
+
 .card.flipped {
   animation-name: none;
   transform: rotateY(180deg);
