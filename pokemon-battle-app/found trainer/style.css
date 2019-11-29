@@ -1,0 +1,21 @@
+
+body{
+  background: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+#trainer{
+
+}
+#map{
+
+}
+#card{
+
+}
+div{
+  display: inline-block;
+}
