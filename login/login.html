@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <title>PokeCatchGo!</title>
+  <meta name="google-signin-client_id" content="1060712151526-fqd6r00r8fmoh9n269gb9u05a4pii46l.apps.googleusercontent.com">
+  <link rel="stylesheet" href="./style.css">  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="done">
+    Gotcha! 
+  </div>
+  <div class="red">
+    <div class="circle">
+      <div class="squareC2"></div>
+    </div>
+  </div>
+  <div class="pokemon">
+    <div class="top">
+      <div class="middle"></div>
+    </div>
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="eye eye-left">
+      <div class="fix2 f"></div>
+      <div class="pupil"></div>
+    </div>
+    <div class="sleep-eye sleep-eye-left"></div>
+    <div class="sleep-eye sleep-eye-right"></div>
+    <div class="eye eye-right">
+      <div class="fix f"></div>
+      <div class="pupil2"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth">
+      <div class="teeth"></div>
+      <div class="tongue"></div>
+    </div>
+  </div>
+  <form id="login-form">
+    <p>Email</p>
+    <input type="email" class="email input" id="login-email" placeholder="Your email" required>
+
+    <p class='pass-text'>Password</p>
+    <div class="show"><input class="show" onclick="show()" type="checkbox"><span>Show</span></div>
+    <input type="password" class="pass input"  id="login-password">
+
+    <input type="submit" class="button input" style="
+    padding:13px 0px; width: 300px;" value="Register">
+
+    <div class="g-signin2 button" data-onsuccess="onSignIn" style="background-color:#78d9ad;
+    color:white;
+    text-align:center;
+    height:50px;
+    width: 300px;
+    margin-top:20px;"></div>
+    <br>
+    <center> <a href="register.html" style="text-decoration: none;"> - Sign Up - </a></center>
+  </form>
+</div>
+<div class="leafs">
+  <div class="leaf leaf1"></div>
+  <div class="leaf leaf2"></div>
+  <div class="leaf leaf3"></div>
+  
+  <div class="leaf leaf4"></div>
+  <div class="leaf leaf5"></div>
+  <div class="leaf leaf6"></div>
+</div>
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
