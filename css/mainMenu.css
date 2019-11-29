@@ -81,6 +81,10 @@
     margin: 30px auto;
 }
 
+.my-list-cards{
+    margin-right: 200px;
+}
+
 .input-wrapper input {
     display: inline-block;
     border: none;
