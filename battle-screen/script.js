@@ -5,7 +5,7 @@ $(document).ready(function(){
   })
     .done(function(pokemon){
       const CP = Math.round((pokemon.base_attack+pokemon.base_defense+pokemon.base_stamina)/3)
-      $('#card').append(`<img src='${pokemon.imageUrl}' height='300px' style="margin-top: 100px;">`)
+      $('#card').append(`<img src='${pokemon.imageUrl}' height='300px' style="margin-top: 100px;"> <br> <br> <br> <button type="button" class="btn btn-danger" style="width: 225px;">Battle</button>`)
     })
     .fail(function(err){
       console.log(err.responseText)
