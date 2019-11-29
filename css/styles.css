@@ -1,3 +1,7 @@
+@import url("homeSubcontent-mid.css");
+@import url("card-info.css");
+@import url("flip-card.css");
+
 .textButton {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
