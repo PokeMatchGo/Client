@@ -2,7 +2,6 @@ var baseUrl = 'http://localhost:3000'
 
 $(document).ready(function () {
   let userCards = []
-  fetchUserCards()
 })
 
 function fetchUserCards() {
@@ -15,6 +14,7 @@ function fetchUserCards() {
   })
     .done(cards => {
       userCards = cards
+      $('.cards-container').empty()
 
       cards.forEach(card => {
         var cardElement = $(
@@ -36,13 +36,6 @@ function renderCard (imageUrl) {
   let rendering = `<img src=${imageUrl}>`
   return rendering
 }
-
-// base_attack: 223
-// base_defense: 169
-// base_stamina: 172
-// imageUrl: "https://images.pokemontcg.io/pop4/5_hires.png"
-// pokemon_id: 254
-// pokemon_name: "Sceptile"
 
 function showCardStat (pokemon_id) {
   $('#card-info').empty()
