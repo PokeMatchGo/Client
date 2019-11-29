@@ -23,16 +23,97 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="http://assets7.pokemon.com/static/us/js/compiled.js" type="text/javascript" charset="utf-8"> </script>
+    <meta name="google-signin-client_id" content="1060712151526-fqd6r00r8fmoh9n269gb9u05a4pii46l.apps.googleusercontent.com">
+    <!-- <link rel="stylesheet" href="./style.css">   -->
     <title>PokeMatch</title>
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mainMenu.css">
     <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
-<body class="twoColumn nojs">
-    <div class="homepage">
+<body class="twoColumn nojs" id="">
+    <div id="formLogin">
+        <div class="login-container">
+            <div class="login-done">
+                Gotcha!
+            </div>
+            <div class="login-red">
+                <div class="circle">
+                    <div class="login-squareC2a"></div>
+                </div>
+            </div>
+            <div class="login-pokemon">
+                <div class="login-top">
+                    <div class="login-middle"></div>
+                </div>
+                <div class="login-square square1"></div>
+                <div class="login-square square2"></div>
+                <div class="login-square square3"></div>
+                <div class="eye eye-left">
+                    <div class="fix2 f"></div>
+                    <div class="pupil"></div>
+                </div>
+                <div class="sleep-eye sleep-eye-left"></div>
+                <div class="sleep-eye sleep-eye-right"></div>
+                <div class="eye eye-right">
+                    <div class="fix f"></div>
+                    <div class="pupil2"></div>
+                </div>
+                <div class="nose"></div>
+                <div class="mouth">
+                    <div class="teeth"></div>
+                    <div class="tongue"></div>
+                </div>
+            </div>
+            <form id="register-form">
+                <p class="login-p">Email</p>
+                <input type="email" class="email login-input text-center" id="register-email" placeholder="Your email" required>
+                <p class="login-p">Name</p>
+                <input type="text" class="name login-input text-center" id="register-name" placeholder="Your name" required>
+                <p class='pass-text login-p' >Password</p>
+                <div class="login-show"><input class="login-show" onclick="show('register')" type="checkbox"><span class="login-span">Show</span></div>
+                <input type="password" class="pass login-input text-center" id="register-password" placeholder="password">
+                <input type="submit" class="login-button login-input" style="
+                padding:13px 0px; width: 300px;" value="Register">
+                <center>
+                    <button type="button" class="btn btn-primary mt-4 login-p" onclick="checkLoginNew()"> Login Form </button>
+                </center>
+            </form>
+            <form id="login-form">
+                <p class="p">Email</p>
+                <input type="email" class="email login-input text-center" id="login-email" placeholder="Your email" required>
+                <p class='pass-text login-p'>Password</p>
+                <div class="login-show"><input class="login-show login-p" onclick="show()" type="checkbox"><span class="login-span">Show</span></div>
+                <input type="password" class="pass login-input text-center" id="login-password" placeholder="password">
+               <input type="submit" class="login-button login-input" style=" padding:13px 0px; width: 300px;" value="Login">
+                <div class="g-signin2 login-button" data-onsuccess="onSignIn" style="background-color:#78d9ad;
+                      color:white;
+                      text-align:center;
+                      height:50px;
+                      width: 300px;
+                      margin-top:20px;"></div>
+                <br>
+                <center>
+                    <button type="button" class="btn btn-primary login-p" onclick="checkLoginNew()"> Register Form </button>
+                </center>
+                <!-- <center> <a href="register.html" style="text-decoration: none;"> - Sign Up - </a></center> -->
+            </form>
+        </div>
+        <div class="leafs">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="leaf leaf5"></div>
+            <div class="leaf leaf6"></div>
+        </div>
+    </div>
+
+    <div class="homepage" id="homepagePoke">
         <div class="wrapper-subzero">
             <div class="wrapper-0">
                 <div class="wrapper-1">
@@ -50,23 +131,33 @@
                                                 <li><a href="/us/account/logout">Log Out</a></li>
                                             </ul>
                                         </div>
-                                        <p class="coins bigSmall"><span class="score"></span><span class="smaller">Tokens</span></p>
-                                        <p class="opScore bigSmall"><a href="/us/account/my-op/"><span class="score">0</span></a></p>
+                                        <p class="coins bigSmall"><span class="score"></span><span
+                                                class="smaller">Tokens</span></p>
+                                        <p class="opScore bigSmall"><a href="/us/account/my-op/"><span
+                                                    class="score">0</span></a></p>
                                         <a class="opLink" href="/us/play-pokemon/">Play! Pokémon</a>
-                                        <a class="opOptLink" href="/us/account/edit-profile/#oppref">Opt in to Rankings!</a>
-                                        <div id="quoteBubble"><span class="komica">&ldquo;<span class="quote">X</span>&rdquo;</span></div>
-                                        <div id="flipBubble"><span class="offscreen">Flip over to view Pok&eacute;mon</span></div>
-                                        <div id="tcgScoreBubble"><span class="offscreen">TCG Premier Rating</span> </div>
-                                        <a id="btn-inbox" class="iconButton disabled" href="/us/account/inbox/my-messages/"><span class="offscreen">Inbox</span></a>
-                                        <a id="btn-flip" class="iconButton disabled"><span class="offscreen">Flip</span></a>
+                                        <a class="opOptLink" href="/us/account/edit-profile/#oppref">Opt in to
+                                            Rankings!</a>
+                                        <div id="quoteBubble"><span class="komica">&ldquo;<span
+                                                    class="quote">X</span>&rdquo;</span></div>
+                                        <div id="flipBubble"><span class="offscreen">Flip over to view
+                                                Pok&eacute;mon</span></div>
+                                        <div id="tcgScoreBubble"><span class="offscreen">TCG Premier Rating</span>
+                                        </div>
+                                        <a id="btn-inbox" class="iconButton disabled"
+                                            href="/us/account/inbox/my-messages/"><span
+                                                class="offscreen">Inbox</span></a>
+                                        <a id="btn-flip" class="iconButton disabled"><span
+                                                class="offscreen">Flip</span></a>
                                         <a id="btn-gear" class="iconButton"><span class="offscreen">Gear</span></a>
                                     </div>
                                     <div class="drawer">
                                         <h3 class="komica">Your Favorite Pok&eacute;mon</h3>
                                         <div class="numbers"></div>
                                         <div class="clear"></div>
-                                        <p class="komica">Drag a Pok&eacute;mon to rearrange its position. When you&rsquo;re done, click &ldquo;save&rdquo; or go to the <a
-                                            href="/us/pokemon-fun-zone/">Fun Zone</a> to edit your 6 favorites!
+                                        <p class="komica">Drag a Pok&eacute;mon to rearrange its position. When
+                                            you&rsquo;re done, click &ldquo;save&rdquo; or go to the <a
+                                                href="/us/pokemon-fun-zone/">Fun Zone</a> to edit your 6 favorites!
                                         </p>
                                         <a class="btn btn-lb" href="#">
                                             <span class="left"></span>
@@ -82,7 +173,8 @@
                                 </div>
                                 <div class="loggedOut">
                                     <h3>
-                                        <a href="/us/account/signup/"><span class="offscreen">Join The Pok&eacute;mon Trainer Club Now! <strong>Join Now!</strong></span>
+                                        <a href="/us/account/signup/"><span class="offscreen">Join The Pok&eacute;mon
+                                                Trainer Club Now! <strong>Join Now!</strong></span>
                                         </a>
                                     </h3>
                                     <div class="avatar"></div>
@@ -106,37 +198,42 @@
                                 <ul id="mainNav" style="background: url('../img/navbar.png');">
                                     <a href="#" class="primary">
                                         <li class="primary videoGame ml-3 mt-2">
-                                            <img src="https://fontmeme.com/permalink/191129/06ed7ebf716be5d8603f6d46112dac35.png" alt="pokemon-font" border="0">
+                                            <img src="https://fontmeme.com/permalink/191129/06ed7ebf716be5d8603f6d46112dac35.png"
+                                                alt="pokemon-font" border="0">
                                         </li>
                                     </a>
                                     <a href="#" onclick="allListCards(event)" class="primary">
                                         <li class="primary tradingCardGame ml-5 mt-2">
-                                            <img src="https://fontmeme.com/permalink/191129/a1725244bb3655494a460913dadba12d.png" alt="pokemon-font" border="0">
+                                            <img src="https://fontmeme.com/permalink/191129/a1725244bb3655494a460913dadba12d.png"
+                                                alt="pokemon-font" border="0">
                                         </li>
                                     </a>
                                     <a href="#" class="primary">
                                         <li class="primary animation ml-5 mt-2">
-                                            <img src="https://fontmeme.com/permalink/191129/825755362d2ad96f6f5fe72e42b5fa08.png" alt="pokemon-font" border="0">
+                                            <img src="https://fontmeme.com/permalink/191129/825755362d2ad96f6f5fe72e42b5fa08.png"
+                                                alt="pokemon-font" border="0">
                                         </li>
                                     </a>
                                     <a href="#" class="primary">
-                                    <li class="primary funZone ml-4 mt-2">
-                                        &nbsp;&nbsp;
-                                        <img src="https://fontmeme.com/permalink/191129/b203482950ef09a058aba2fed6685dc5.png" alt="pokemon-font" border="0">
-                                    </li>
+                                        <li class="primary funZone ml-4 mt-2">
+                                            &nbsp;&nbsp;
+                                            <img src="https://fontmeme.com/permalink/191129/b203482950ef09a058aba2fed6685dc5.png"
+                                                alt="pokemon-font" border="0">
+                                        </li>
                                     </a>
-                                    <a href="#" class="primary">
+                                    <a href="#" onclick="signOut()" class="primary">
                                         <li class="primary newsAndEvents ml-5 mt-2">
-                                            <img src="https://fontmeme.com/permalink/191129/da47075beae38517862599f937634bcc.png" alt="pokemon-font" border="0">
+                                            <img src="https://fontmeme.com/permalink/191129/da47075beae38517862599f937634bcc.png"
+                                                alt="pokemon-font" border="0">
                                         </li>
                                     </a>
                                 </ul>
                                 <!-- <ul id="mainNav-indicators"> -->
-                                    <!-- <li class="videoGames"></li> -->
-                                    <!-- <li class="tradingCardGame"></li> -->
-                                    <!-- <li class="animation"></li> -->
-                                    <!-- <li class="funZone"></li> -->
-                                    <!-- <li class="newsAndEvents"></li> -->
+                                <!-- <li class="videoGames"></li> -->
+                                <!-- <li class="tradingCardGame"></li> -->
+                                <!-- <li class="animation"></li> -->
+                                <!-- <li class="funZone"></li> -->
+                                <!-- <li class="newsAndEvents"></li> -->
                                 <!-- </ul> -->
 
                                 <div id="secondaryNav">
@@ -238,11 +335,16 @@
                                 <div class="clear"></div>
                                 <div class="my-list-cards">
                                     <div class="input-wrapper ml-5">
-                                        <input name="pokemon-name" class="ml-5" placeholder="Search for a pokemon..." type="text">
+                                        <input name="pokemon-name" class="ml-5" id="nameSearch"
+                                            placeholder="Search for a pokemon..." type="text">
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="searchPoke(event)">Search</button>
                                     </div>
                                     <div class="cards-container pl-4">
                                         <a class="card">
-                                            <div class="side front" style="background-image:url('https://poketaz.weebly.com/uploads/4/9/7/8/4978776/6169581_orig.jpg')"></div>
+                                            <div class="side front"
+                                                style="background-image:url('https://poketaz.weebly.com/uploads/4/9/7/8/4978776/6169581_orig.jpg')">
+                                            </div>
                                             <div class="side back"></div>
                                         </a>
                                     </div>
@@ -267,22 +369,25 @@
         <div id="footer">
         </div>
     </div>
-<script src="http://assets3.pokemon.com/static/_ui/js/page-specific/homepage.js" type="text/javascript"
-    charset="utf-8"></script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="http://assets3.pokemon.com/static/_ui/js/page-specific/homepage.js" type="text/javascript"
+        charset="utf-8"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
-    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
     </script>
-<!-- Optional JavaScript -->
-<script src="./js/script.js"></script>
-<script src="./js/main.js"></script>
-<script src="./js/mainMenu.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mainMenu.js"></script>
 </body>
 
 </html>
