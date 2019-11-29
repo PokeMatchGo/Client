@@ -1,8 +1,8 @@
 #card-info {
   /* background-color: wheat; */
-  position: relative;
+  position: absolute;
   left: 700px;
-  bottom: 200px;
+  bottom: 150px;
   width: 200px;
   padding: 50px;
 }
