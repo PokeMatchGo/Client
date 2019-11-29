@@ -5,8 +5,6 @@ $(document).ready((_=>{
 }))
 
 function allListCards(){
-  console.log('sasa');
-  
   localStorage.setItem('allcard','menyala!')
   $('.cards-container').empty();
   $('.input-wrapper').addClass('loading');
@@ -35,16 +33,17 @@ function allListCards(){
   .always()
 }
 
-function searchCards(e){
+function searchPoke(e) {
+  e.preventDefault();
+  if ($('#nameSearch').val()) {
+    
+  }
   $('.cards-container').empty();
   $('.input-wrapper').addClass('loading');
-  e.preventDefault();
   $.ajax({
-    method:"get",
+    method:"post",
     url:"http://localhost:3000/pokemon/searchCards",
-    data : {
-      name : $('#inputSearch').val()
-    }
+    data : { name : $('#nameSearch').val() }
   })
   .done(response=>{
     for(var i = 1; i < response['cards'].length; i++) {
@@ -64,5 +63,8 @@ function searchCards(e){
   .fail(err=>{
     alert(err)
   })
-  .always()
+  .always(err=>{
+    $('input[name="pokemon-name"]').val('');
+    $('.input-wrapper').removeClass('loading');
+  })
 }

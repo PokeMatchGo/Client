@@ -1,3 +1,57 @@
+$(document).ready(function () {
+    if (localStorage.getItem('token')) {
+        $('#homepagePoke').show()
+        $('#login-form').hide()
+        $('#register-form').hide()
+    } else {
+        $('#homepagePoke').hide()
+        checkLoginNew()
+    }
+});
+
+function checkLoginNew() {
+    $('#login-form').show()
+    $('#register-form').hide()
+}
+
+
+let flaging = false
+function checkLoginNew() {
+    if (!flaging) {
+        $('#login-form').show()
+        $('#register-form').hide()
+        buttonSub()
+    } else {
+        $('#login-form').hide()
+        $('#register-form').show()
+        buttonSub()
+    }
+}
+
+
+function buttonSub() {
+    flaging ? flaging = false : flaging = true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// UI POKE
 //<![CDATA[
 $(document).ready(function () {
     pokemonUI.init();
