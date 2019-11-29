@@ -11,7 +11,7 @@ $(document).ready(function(){
       console.log(err.responseText)
     })
     .always(function(){  
-      $('#trainer').append(`<img src="./trainer.png" height='500px' style="margin-top: 100px;">`)
+      $('#trainer').append(`<img src="../img/trainer.png" height='500px' style="margin-top: 100px;">`)
     })
 
   $.ajax({
