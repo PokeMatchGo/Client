@@ -62,18 +62,18 @@ $(document).ready(function () {
     };
     // Embed flash pieces :
 
-    var homeFeature = {
-        config: {
-            src: rootVirtual + "swf/features/PmFeatureHomeShell.swf",
-            wmode: 'transparent',
-            allowscriptaccess: 'always'
-        },
-        flashvars: {
-            appFile: rootVirtual + 'swf/features/PmFeatureHomeApp.swf',
-            configFile: '/us/_hpc.xml',
-            dynamicTextPath: rootVirtual + 'swf/features/PmFeatureTVText.swf'
-        }
-    };
+    // var homeFeature = {
+    //     config: {
+    //         src: rootVirtual + "swf/features/PmFeatureHomeShell.swf",
+    //         wmode: 'transparent',
+    //         allowscriptaccess: 'always'
+    //     },
+    //     flashvars: {
+    //         appFile: rootVirtual + 'swf/features/PmFeatureHomeApp.swf',
+    //         configFile: '/us/_hpc.xml',
+    //         dynamicTextPath: rootVirtual + 'swf/features/PmFeatureTVText.swf'
+    //     }
+    // };
 
     var homeFlashCallout = {
         config: {
@@ -82,18 +82,18 @@ $(document).ready(function () {
         }
     };
 
-    var marquee = {
-        config: {
-            src: rootVirtual + "swf/MarqueeApplication.swf",
-            wmode: 'transparent',
-            allowscriptaccess: 'always'
-        },
-        flashvars: {
-            xmlPath: "/us/_mc.xml",
-            countryCode: "us",
-            langFilePath: "http://assets20.pokemon.com/static/us/marquee/language.xml"
-        }
-    };
+    // var marquee = {
+    //     config: {
+    //         src: rootVirtual + "swf/MarqueeApplication.swf",
+    //         wmode: 'transparent',
+    //         allowscriptaccess: 'always'
+    //     },
+    //     flashvars: {
+    //         xmlPath: "/us/_mc.xml",
+    //         countryCode: "us",
+    //         langFilePath: "http://assets20.pokemon.com/static/us/marquee/language.xml"
+    //     }
+    // };
 
     $('div#header').append('<div id="flashMarquee"></div><div id="flashMask"></div>');
     $('div#homeFlash-1').flashembed(homeFeature.config, homeFeature.flashvars);
