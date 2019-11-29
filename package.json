@@ -1,0 +1,21 @@
+{
+  "name": "Client",
+  "version": "1.0.0",
+  "description": "``` main.js ==> Jquery script.js ==> templates style.css ==> css style.scss ==> template next css ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PokeMatchGo/Client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PokeMatchGo/Client/issues"
+  },
+  "homepage": "https://github.com/PokeMatchGo/Client#readme",
+  "dependencies": {}
+}
